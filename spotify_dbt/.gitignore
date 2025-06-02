@@ -1,9 +1,0 @@
-
-target/
-dbt_packages/
-logs/
-AWS_CLI_commands.md
-journal.md
-recce
-spotify-pipeline-user_accessKeys.csv
-spotify-pipeline-user_credentials.csv
