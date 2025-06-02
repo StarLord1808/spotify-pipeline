@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: spotify_db
+    database: spotify_db
+    schema: raw
+    tables:
+      - name: playlists
+        identifier: raw_playlists
+        description: |
+          This table contains the playlists that have been processed and are ready for analysis.
+          It includes the playlist ID, name, description, and other relevant metadata.
+      - name: tracks
+        identifier: raw_tracks
+        description: |
+          This table contains the tracks that have been processed and are ready for analysis.
+          It includes the track ID, name, artist, album, and other relevant metadata.

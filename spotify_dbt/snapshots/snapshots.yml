@@ -1,0 +1,10 @@
+version: 2
+
+snapshots:
+  - name: dim_tracks_snapshot
+    description: Tracks historical changes in track dimension fields over time
+    
+
+  - name: dim_albums_snapshot
+    description: Tracks historical changes in album dimension fields over time
+    

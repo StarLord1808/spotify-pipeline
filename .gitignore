@@ -1,0 +1,13 @@
+logs
+.vscode
+dags/__pycache__
+scripts/artifacts
+scripts/BKP
+spotify_dbt/target/
+spotify_dbt/dbt_packages/
+spotify_dbt/logs/
+AWS_CLI_commands.md
+journal.md
+recce
+spotify-pipeline-user_accessKeys.csv
+spotify-pipeline-user_credentials.csv

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_processed_tracks
+    columns:
+      - name: track_uri
+        tests:
+          - no_nulls
+
+  - name: stg_processed_playlists
+    columns:
+      - name: playlist_id
+        tests:
+          - no_nulls

@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: dim_tracks
+    columns:
+      - name: track_uri
+        tests:
+          - no_duplicates
+          - no_nulls
+
+  - name: dim_albums
+    columns:
+      - name: album_uri
+        tests:
+          - no_duplicates
+          - no_nulls
+
+  - name: dim_artists
+    columns:
+      - name: artist_uri
+        tests:
+          - no_duplicates
+          - no_nulls
+
+  - name: dim_playlists
+    columns:
+      - name: playlist_id
+        tests:
+          - no_duplicates
+          - no_nulls
+
+  - name: fct_playlist_tracks
+    columns:
+      - name: track_sk
+        tests:
+          - no_nulls
+          - relationships:
+              to: ref('dim_tracks')
+              field: track_sk
+
+      - name: playlist_id
+        tests:
+          - no_nulls
+          - relationships:
+              to: ref('dim_playlists')
+              field: playlist_id
